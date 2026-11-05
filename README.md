@@ -1,40 +1,38 @@
-# DOICT-IndSoc Workshop website (draft)
+# DOICT-IndSoc Workshop Official Website (IEEE-style revision)
 
-一个可直接部署在 GitHub Pages 的静态网站初版。以 **IEEE INFOCOM 2027 / 第二届 DOICT-IndSoc** 为首页，并设有 **2026 年首届历史归档页**。
+Independent GitHub Pages static website for the DOICT-IndSoc international workshop, **inspired by the dark-blue and white visual style of its IEEE INFOCOM 2026 listing**.
 
-## 页面
+## Files
 
-- `index.html`：第二届主页、简介、研究方向、重要日期、上届入口。
-- `cfp.html`：根据提供的中文宣传通知整理的英文 CFP 草稿。
-- `2026/index.html`：首届简介、日期、地点和原 IEEE INFOCOM 网站链接；**不是完整复制**。
-- `assets/styles.css`：颜色、字体、布局、响应式样式。
-- `assets/favicon.svg`：临时原创文字站标，不是 IEEE 官方 Logo。
+- `index.html`: **2027 home page**, with CFP, dates, committee placeholder, program placeholder, and archive link.
+- `cfp.html`: detailed **2027 Call for Papers**.
+- `2026/index.html`: archive of the **2026 first edition**.
+- `assets/styles.css`: shared layout and styling (both editions).
+- `assets/favicon.svg`: independent monogram icon (not an official IEEE logo).
+- `.nojekyll`: GitHub Pages helper file.
 
-## 当前已填入（2027）
+## Deployment to your existing repository
 
-- 英文标题（用户提供的第二届版本）：Fusion of Data, Operation, Information, and Communication Technologies for Industrial Internet and Society 5.0
-- 截稿日期：2026-12-29
-- Workshop：2027-05-24
-- 地点：Honolulu, Hawaii, USA
-- 论文集/IEEE Xplore：来自当前宣传通知，**公开发布前请确认 IEEE INFOCOM 2027 的最终政策**。
+Target repository: `https://github.com/indsocws-pixel/doict-indsoc`
 
-## 对外发布前必须确认
+1. Download and unzip the bundle.
+2. On the GitHub repository page, choose **Add file → Upload files**.
+3. Drag the files and the `2026` and `assets` folders from **inside** the extracted folder (not the top-level folder itself) into the upload area, and commit changes. When GitHub warns of duplicate paths, choose the overwrite/replace operation.
+4. Make sure `index.html` exists in the repo root and `2026/index.html` exists inside folder `2026/` (not a text file named `2026`).
+5. Open repository **Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save**.
+6. The expected website URL is `https://indsocws-pixel.github.io/doict-indsoc/` after successful deployment.
 
-1. 第二届的英文正式会议全称与 2026 版不同，务必征得组委会最终确认。
-2. 正式投稿入口（例如 EDAS 的具体会议编号和链接）、页数、排版模板、通知日期、终稿日期、时区（AoE 等）。**目前未填写，也没有复用 2026 的投稿链接。**
-3. CFP 英文介绍和 Topics 为根据中文宣传稿编辑形成的草稿，需 CFP 负责人审核。
-4. 组委会名单、联系邮箱尚未提供，故暂不放置以免误导。
-5. 2026 原网页的完整 CFP、组织委员会和日程暂未迁移；本站仅保存概览和原始网页入口。
-6. 未在该草稿中使用受保护的 IEEE/INFOCOM 标志或照片；取得许可后可以替换。
-7. CFP 页面底部有面向内部审核的 draft 提示，公开之前建议删去该行。
+## Important editorial checks before publication
 
-## GitHub Pages 部署（最简单）
+- The **2027 submission portal, author formatting rules, page limit, acceptance notification, camera-ready date, committee, and detailed program** were *not provided*. Those areas are clearly marked as to be announced.
+- The workshop title for 2027 follows the Chinese publicity notice provided by the workshop chair. First edition (2026) used a different full title; both historical titles are retained as supplied.
+- Publication wording follows the 2027 announcement and should be approved by organizers.
+- The 2026 historical topics are summarized/transcribed from the first-edition screenshot; the official page could not be fully retrieved. **2026 Committee and Program are linked to the original page instead of inventing records.**
+- The 2026 event duration and rooms (08:30–18:00; Kiku 1 / Kiku 2) are taken from the screenshot provided by the workshop chair. Remove if the official program disagrees.
+- This is an independently designed site; it does not reproduce IEEE's main-conference navigation, official logo, trademark artwork, or original proprietary site code.
 
-1. 用 Workshop 管理员的 GitHub 账号登录 GitHub；**不要把账号密码发送给他人**。
-2. 新建公开仓库，推荐名：`doict-indsoc`（如果希望主页直接是 GitHub 子域名，仓库可以叫 `<yourusername>.github.io`）。
-3. 把 ZIP 解压，把**里面的文件和目录**上传到仓库根目录（不要多套一层 `doict-indsoc-site`）。
-4. 在仓库中打开 **Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save**。
-5. 访问 `https://<yourusername>.github.io/doict-indsoc/`（如果仓库是 `<yourusername>.github.io` 则访问根域名）。
-6. 对外宣传前逐条核对各项 CFP 内容与链接。更新只需在 GitHub 编辑相应 HTML 文件。
+Original page: https://infocom2026.ieee-infocom.org/pages/international-workshop-fusion-data-operation-information-and-communication-technology
 
-> 本仓库尚未被上传到 GitHub，也未发布公网；这是供组委会审阅的初版源码。
+## Editing later
+
+The text and links are editable using any plain-text editor or GitHub's Edit file feature. Keep the `href` values relative (`cfp.html`, `2026/`, `../index.html`) so the GitHub Pages project URL works. Update CSS once to update both years.
