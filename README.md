@@ -1,33 +1,36 @@
-# DOICT-IndSoc 2027 Website (GitHub Pages ready)
+# DOICT-IndSoc Workshop website — V5
 
-This is a self-contained, static HTML/CSS/JavaScript site for the 2nd DOICT-IndSoc Workshop at IEEE INFOCOM 2027.
+## What this release changes
 
-## Included pages
-- `index.html`: homepage with Honolulu-inspired hero image, information cards, live countdown, scope, CFP highlights, and committees.
-- `cfp.html`: full Call for Papers (topics, publication, deadlines, guidelines).
-- `committee.html`: complete 2027 organizing committee transcribed from the supplied CFP poster.
-- `program.html`: schedule page (details pending).
-- `2026/index.html`: historical first-edition landing page and original website link.
-- `assets/style.css`, `assets/script.js`, `assets/honolulu-hero.webp`, `assets/favicon.svg`.
+The generated sample CFP poster from V4 has been **removed**. The site is otherwise unchanged: IEEE INFOCOM 2027 workshop homepage, 2027 CFP, committee, schedule, the 2026 archive, December 29, 2026 submission-date countdown, and mobile-friendly styling remain.
 
-## Deploy or update
-1. Open https://github.com/indsocws-pixel/doict-indsoc
-2. Delete obsolete individual files if necessary. Use **Add file > Upload files** and upload ALL extracted files and directories from this package to the repository root. Upload the contents, not the ZIP and not a parent folder.
-3. Commit changes. In Settings > Pages select **Deploy from a branch** / **main** / **/(root)**, Save.
-4. Visit https://indsocws-pixel.github.io/doict-indsoc/ after deployment.
+The **At a Glance** panel on the home page and the CFP page now say **Official CFP poster coming soon**, with no broken PDF download.
 
-## Items that require organizers' follow-up
-- The 2027 submission portal URL is not supplied and is intentionally marked “To be announced.”
-- The exact time zone for the 2026-12-29 deadline has not been announced.
-- The workshop program, presentation times and room are to be announced.
-- Full authoritative 2026 committee/program text should be copied from original source before publishing it as a complete local archive.
-- Verify all names/affiliations against the final approved CFP.
+## When the organizers send the actual PDF
 
-## Image disclosure
-The local hero image `assets/honolulu-hero.webp` is AI-generated illustrative artwork inspired by Honolulu and Diamond Head, **not a documentary photograph of the venue**. The website footer discloses this. Replace with an authorized location photograph if your organizers require a real-world photo.
+**Do not upload it yet unless the PDF is final and approved for publicity.** When the final PDF arrives:
 
-## Notes
-- Site uses local images, styles and scripts. No frameworks, build tools, hosted fonts, or CDN dependencies.
-- Default GitHub Pages URL: https://indsocws-pixel.github.io/doict-indsoc/
-- `assets/script.js` counts down to May 24, 2027 at **00:00 HST** as the start of the calendar day, not the workshop session time.
-- Do not put the prior edition's EDAS link on the 2027 CFP.
+1. Rename it to exactly `DOICT-IndSoc-2027-Official-CFP.pdf`.
+2. Upload it to the GitHub repository at `assets/DOICT-IndSoc-2027-Official-CFP.pdf` (within the existing `assets` folder).
+3. Commit the change. You do **not** need to edit `index.html`, `cfp.html`, or JavaScript.
+4. Once GitHub Pages is updated, the site automatically detects the PDF and reveals the **Download Official CFP Poster (PDF)** links on both the homepage and CFP page.
+
+GitHub repository: https://github.com/indsocws-pixel/doict-indsoc
+Public site: https://indsocws-pixel.github.io/doict-indsoc/
+
+## How to deploy V5 now
+
+Unzip this archive and upload the **contents** (not the enclosing folder) to the root of the existing repository. Files named `index.html`, `cfp.html`, `assets/style.css` and `assets/script.js` must replace their prior versions. Your GitHub Pages settings remain `main` and `/ (root)`.
+
+**Important cleanup:** Since uploading new files does not delete older files in the existing GitHub repository, please delete these V4 draft-poster files when convenient:
+- `assets/DOICT-IndSoc-2027-CFP.pdf` (unofficial generated example)
+- `assets/cfp-poster-preview.webp` (unofficial poster preview)
+- `poster.html` (unofficial poster editing source)
+
+These are deliberately absent from V5. The website does **not** link to them anymore.
+
+## Editorial reminders
+
+- Submission URL, final cutoff time and time zone, and detailed 2027 workshop schedule are still awaiting organizers' confirmation.
+- The 2026 page contains available archival content, not a verified full historical committee / detailed schedule transcription.
+- The Honolulu hero illustration is AI-generated, not an official site photo.
