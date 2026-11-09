@@ -21,3 +21,12 @@ Upload **all extracted files and folders** to the root of `https://github.com/in
 Public URL: https://indsocws-pixel.github.io/doict-indsoc/
 
 If there are old, unused files such as `poster.html` or `assets/DOICT-IndSoc-2027-CFP.pdf` in the GitHub repository from V4, remove them separately when convenient.
+
+
+## Committee contact emails
+
+The Organization page and homepage now show clickable `mailto:` contacts for the lead chairs:
+- Bo Qian (Lead General Chair): boqian@ieee.org
+- Hang Zhou (Lead TPC Chair): zh185571483@gmail.com
+
+The emails are displayed below each affiliation and open the visitor's default email application when clicked.
