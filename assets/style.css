@@ -64,3 +64,10 @@ body{font-family:var(--font-body);font-size:16px;line-height:1.63;letter-spacing
 @media(max-width:1180px){.nav{display:none}.mobile-toggle{display:block}.head-inner{height:70px}.mobile-nav{padding:8px 18px 18px;border-top:1px solid #e9f0f4}.mobile-nav.open{display:flex;flex-direction:column}.mobile-nav a{text-decoration:none;color:#24485e;padding:11px 9px;border-bottom:1px solid #eaf0f4;font-size:14px;font-weight:700}.mobile-nav a.active{color:#0789ba}}
 @media(max-width:760px){.poster-promo-top{gap:15px}.poster-promo-top img{width:100px;height:140px}.poster-preview-link{flex-basis:100px}.poster-actions{gap:8px}.cfp-poster-callout{align-items:flex-start}.hero h1{font-size:clamp(30px,7.6vw,44px);line-height:1.2;letter-spacing:-.03em}}
 @media(max-width:440px){.poster-promo-top img{width:91px;height:128px}.poster-preview-link{flex-basis:91px}.poster-promo-top strong{font-size:15px}.poster-actions .btn{flex-basis:100%}.cfp-poster-callout{flex-direction:column}.cfp-poster-callout .poster-actions .btn{flex:1 1 100%}}
+
+
+/* Clickable contact emails for lead workshop chairs */
+.committee-card .committee-email{display:block;margin-top:3px;color:#0789bd;font-size:12px;line-height:1.45;text-decoration:none;font-weight:600}
+.committee-card .committee-email:hover{text-decoration:underline;color:#075f8b}
+.committee-card .committee-email:focus-visible{outline:2px solid #0789bd;outline-offset:2px;border-radius:3px}
+@media(max-width:640px){.committee-card .committee-email{font-size:13px}}
